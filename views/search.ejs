@@ -21,14 +21,4 @@
     </li>
     <%}); %>
   </ul>
-
-  <% if (nextPage !== null) { %>
-  <a href="/?page=<%= nextPage %>" class="pagination">&lt; View Older Posts</a>
-  <% } %> <% if (prevPage >= 1) { %> <% if (prevPage === 1) { %>
-  <a href="/" class="paginationnewpage">View Newer Posts &gt;</a>
-  <% } else { %>
-  <a href="/?page=<%= prevPage %>" class="paginationnewpage"
-    >View Newer Posts &gt;</a
-  >
-  <% } %> <% } %>
 </section>
